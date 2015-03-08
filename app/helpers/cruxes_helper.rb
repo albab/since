@@ -1,0 +1,2 @@
+module CruxesHelper
+end
