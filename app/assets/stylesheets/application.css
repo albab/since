@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap
+
  */
 
 body {
@@ -62,4 +64,51 @@ body {
 
 .shared_links a:hover {
   color:#000;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+
+.modal-backdrop, .modal-backdrop.fade.in {
+  opacity: 0 !important;
+}
+
+
+.modal-content {
+  width:300px;
+  height:400px;
+}
+
+.modal {
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  height:500px !important;
+}
+
+.days_since {
+  margin-bottom: 40px;
+}
+
+
+.days_since_submit {
+  margin-top:20px;
+}
+
+.crux_background {
+  color:#fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size:19px;
+}
+
+.since_I {
+  font-size:23px;
+}
+
+
+.modal {
+  height:200px;
+  width:300px;
 }

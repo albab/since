@@ -1,0 +1,7 @@
+<%= simple_form_for @crux do |f| %>
+    <div class="form-group">
+        <h1 class="days_since">0 days since...</h1>
+        <%= f.text_area :description, class: "form-control", placeholder:"Description", id:"since_description" %>
+    </div>
+    <%= f.submit "Start counting!", class:"btn btn-success days_since_submit" %>
+<% end %>

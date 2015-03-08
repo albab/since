@@ -1,2 +1,8 @@
-<h1>Cruxes#new</h1>
-<p>Find me in app/views/cruxes/new.html.erb</p>
+<div class="container new_crux">
+    <%= simple_form_for @crux do |f| %>
+        <div class="form-group">
+            <%= f.text_area :description, class: "form-control", placeholder:"Description", id:"since_description" %>
+        </div>
+        <%= f.submit "Submit", class:"btn btn-success" %>
+    <% end %>
+</div>

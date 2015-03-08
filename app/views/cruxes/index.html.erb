@@ -1,0 +1,20 @@
+
+<%= render partial: "modal" %>
+
+<div class="create_crux">
+  <%= link_to 'Modal', '/create_crux', remote: true %>
+</div>
+
+
+
+<div class="user_cruxes">
+  <% @cruxes.each do |crux| %>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 crux-box">
+          <div class="crux_background">
+              <div class="its_been">It's been <%= crux.days %> days since</div>
+              <spa class="since_I"><%= crux.description %></span>
+          </div>
+    </div>
+  <% end %>
+</div>
+
