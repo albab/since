@@ -17,7 +17,7 @@
                     <% end %>
                   </div>
                   <div clas="delete">
-                    <%= link_to "delete_crux/#{crux.id}", method: :delete, confirm: "Do you really want to delete this?" do %>
+                    <%= link_to "delete_crux/#{crux.id}", data: { confirm: "Do you really want to delete this?" }, method: :delete  do %>
                       <i class="fa fa-times fa-2x col-md-3 delete_crux"></i>
                     <% end %>
                   </div>

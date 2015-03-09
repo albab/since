@@ -1,3 +1,12 @@
+<div class="sign_out" id="sign_out">
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <i class="fa fa-sign-out fa-3x sign_out_button"></i>
+  <% end %>
+</div>
+
+
+
+
 <div class="container add_a_crux">
   <div class="create_crux">
     <%= link_to '/create_crux', remote: true, class:"add_new_crux" do %>

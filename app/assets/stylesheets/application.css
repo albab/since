@@ -26,6 +26,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.sign_out {
+  float:right;
+  margin-top:1%;
+  margin-right:1%;
+}
+
+.sign_out_button {
+  color: #000;
+}
+
 }
 .sign_up_page {
   text-align: center;
@@ -116,7 +126,7 @@ body {
   background-color: #4C4D50;
   width:300px;
   height:auto;
-  padding: 20px 20px 45px 20%;
+  padding: 20px 20px 55px 20%;
   word-wrap: break-word;
 }
 
