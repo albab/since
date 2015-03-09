@@ -1,0 +1,20 @@
+<div class="user_cruxes">
+    <% @cruxes.each do |crux| %>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 crux-box">
+            <div class="crux_background">
+                <div class="its_been">It's been <%= (Date.current - crux.created_at.to_date).to_i %> days since</div>
+                <span class="since_I"><%= crux.description %></span>
+                <div class="reset">
+                  <%= link_to "reset_crux/#{crux.id}", data: { confirm: "Are you sure you want to reset the clock on this?" } do %>
+                    <i class="fa fa-refresh fa-2x reset_button"></i>
+                  <% end %>
+
+                  <%= link_to "delete_crux/#{crux.id}", method: :delete, confirm: "Do you really want to delete this?" do %>
+                    <i class="fa fa-times fa-2x delete_crux"></i>
+                  <% end %>
+                </div>
+            </div>
+      </div>
+    <% end %>
+  </div>
+</div>

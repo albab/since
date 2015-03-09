@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
 
   get '/create_crux' => 'cruxes#new'
+  get '/reset_crux/:id' => 'cruxes#reset_crux'
+  delete '/delete_crux/:id' => 'cruxes#delete_crux'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

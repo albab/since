@@ -34,6 +34,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.reset_button {
+  margin-top:9px;
+  vertical-align: middle;
+}
+
+
+.create_crux {
+  margin-top:100px;
+  margin-left:19px;
+}
+
 
 
 .sign_in_title {
@@ -83,8 +94,8 @@ body {
 
 .modal {
   margin-top:100px;
-  margin-left:auto;
-  margin-right:auto;
+  top:10px;
+  left:10px;
   height:500px !important;
 }
 
@@ -100,8 +111,35 @@ body {
 .crux_background {
   color:#fff;
   font-family: 'Open Sans', sans-serif;
-  font-size:19px;
+  font-size:15px;
+  background-color: #4C4D50;
+  width:300px;
+  padding: 20px 20px 20px 20%;
 }
+
+.user_cruxes {
+  margin-left:.5%;
+}
+
+.delete_crux {
+  vertical-align: middle;
+  color: #C24749;
+  margin-left:14px;
+  margin-top:9px;
+}
+
+
+.crux-box {
+  margin-left:3%;
+  margin-top:40px;
+  margin-right:3%;
+}
+
+
+.add_new_crux {
+  color: #fff ;
+}
+
 
 .since_I {
   font-size:23px;

@@ -31,6 +31,21 @@ class CruxesController < ApplicationController
   end
 
 
+  def reset_crux
+    @crux = Crux.find(params[:id])
+    @crux.created_at = Time.now
+    @crux.save
+    redirect_to root_path
+  end
+
+
+  def delete_crux
+    @crux = Crux.find(params[:id])
+    @crux.destroy
+    @crux.save
+    redirect_to root_path
+  end
+
   private
 
   def crux_params

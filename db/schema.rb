@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150308180831) do
+ActiveRecord::Schema.define(version: 20150308193924) do
 
   create_table "cruxes", force: :cascade do |t|
     t.text     "description"
-    t.integer  "days"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "days",        default: 0
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.integer  "user_id"
   end
 
