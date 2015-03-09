@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get '/create_crux' => 'cruxes#new'
   get '/reset_crux/:id' => 'cruxes#reset_crux'
+  get '/edit_crux/:id' => 'cruxes#edit_crux'
   delete '/delete_crux/:id' => 'cruxes#delete_crux'
 
 

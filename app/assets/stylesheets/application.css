@@ -37,6 +37,7 @@ body {
 .reset_button {
   margin-top:9px;
   vertical-align: middle;
+  color:#448FC1;
 }
 
 
@@ -114,7 +115,9 @@ body {
   font-size:15px;
   background-color: #4C4D50;
   width:300px;
-  padding: 20px 20px 20px 20%;
+  height:auto;
+  padding: 20px 20px 45px 20%;
+  word-wrap: break-word;
 }
 
 .user_cruxes {
@@ -125,9 +128,8 @@ body {
   vertical-align: middle;
   color: #C24749;
   margin-left:14px;
-  margin-top:9px;
+  margin-top:7px;
 }
-
 
 .crux-box {
   margin-left:3%;
@@ -143,6 +145,17 @@ body {
 
 .since_I {
   font-size:23px;
+}
+
+.edit_crux {
+  color:#fff;
+  vertical-align: middle;
+  margin-top:9px;
+  margin-left:13px;
+}
+
+.edit_crux_field {
+  width:160px;
 }
 
 

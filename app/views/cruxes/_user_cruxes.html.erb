@@ -3,16 +3,26 @@
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 crux-box">
             <div class="crux_background">
                 <div class="its_been">It's been <%= (Date.current - crux.created_at.to_date).to_i %> days since</div>
-                <span class="since_I"><%= crux.description %></span>
-                <div class="reset">
-                  <%= link_to "reset_crux/#{crux.id}", data: { confirm: "Are you sure you want to reset the clock on this?" } do %>
-                    <i class="fa fa-refresh fa-2x reset_button"></i>
-                  <% end %>
+                <div class="since_I" id="since_I"><%= crux.description %></div>
 
-                  <%= link_to "delete_crux/#{crux.id}", method: :delete, confirm: "Do you really want to delete this?" do %>
-                    <i class="fa fa-times fa-2x delete_crux"></i>
-                  <% end %>
+                <div class="buttons">
+                  <div class="reset">
+                    <%= link_to "reset_crux/#{crux.id}", data: { confirm: "Are you sure you want to reset the clock on this?" } do %>
+                      <i class="fa fa-refresh fa-2x col-md-3 reset_button"></i>
+                    <% end %>
+                  </div>
+                  <div class="edit">
+                    <%= link_to "edit_crux/#{crux.id}", remote:true do %>
+                      <i class="fa fa-pencil-square-o fa-2x col-md-3 edit_crux"></i>
+                    <% end %>
+                  </div>
+                  <div clas="delete">
+                    <%= link_to "delete_crux/#{crux.id}", method: :delete, confirm: "Do you really want to delete this?" do %>
+                      <i class="fa fa-times fa-2x col-md-3 delete_crux"></i>
+                    <% end %>
+                  </div>
                 </div>
+
             </div>
       </div>
     <% end %>

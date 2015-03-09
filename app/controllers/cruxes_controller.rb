@@ -39,6 +39,20 @@ class CruxesController < ApplicationController
   end
 
 
+
+  def update
+    @crux = Crux.find(params[:id])
+    if @crux.update_attributes(crux_params)
+      redirect_to root_path
+    end
+  end
+
+
+  def edit_crux
+    @crux = Crux.find(params[:id])
+  end
+
+
   def delete_crux
     @crux = Crux.find(params[:id])
     @crux.destroy

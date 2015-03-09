@@ -1,0 +1,8 @@
+<div class="edit_crux_field">
+    <%= simple_form_for @crux do |f| %>
+        <div class="form-group">
+            <%= f.text_area :description, class: "form-control", placeholder:"Description", id:"edit_description" %>
+        </div>
+        <%= f.submit "Save", class:"btn btn-success" %>
+    <% end %>
+</div>
